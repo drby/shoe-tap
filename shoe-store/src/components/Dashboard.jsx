@@ -21,7 +21,7 @@ const Dashboard = () => {
         {
             order.map(item => <p>new order: {item.store}, inventory is now: {item.inventory}</p>)
         }
-            <button onClick={ () => console.log(order)}>see array (test)</button>
+            <button onClick={ () => console.log(order) }>see array (test)</button>
         </div>
     )
 }
