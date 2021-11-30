@@ -19,10 +19,9 @@ const Dashboard = () => {
     return(
         <div>
         {
-            order.forEach((item) => 
-                <p>{item}</p>
-        )}
-            <button onClick={ () => console.log(order)}>click me</button>
+            order.map(item => <p>new order: {item.store}, inventory is now: {item.inventory}</p>)
+        }
+            <button onClick={ () => console.log(order)}>see array (test)</button>
         </div>
     )
 }
