@@ -8,7 +8,7 @@ const Dashboard = () => {
         var ws = new WebSocket('ws://localhost:8080/');
         ws.onmessage = function(event) {
         console.log(event.data);
-        setOrder( order => [...order, event.data])
+        setOrder( order => [...order, JSON.parse(event.data)])
         };
     }
 
@@ -18,7 +18,10 @@ const Dashboard = () => {
 
     return(
         <div>
-            <p>hey</p>
+        {
+            order.forEach((item) => 
+                <p>{item}</p>
+        )}
             <button onClick={ () => console.log(order)}>click me</button>
         </div>
     )
