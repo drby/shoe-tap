@@ -26,13 +26,11 @@ const Dashboard = () => {
     return(
         <Container fluid="md">
             <Row>
-                <Col>
-                    <div>
-                        {
-                            order.map(item => <p>new order: {item.store}, inventory is now: {item.inventory}</p>)
-                        }
-                        <button onClick={ () => console.log(order) }>see array (test)</button>
-                    </div>
+                <Col>             
+                    {
+                        order.map(item => <p>new order: {item.store}, inventory is now: {item.inventory}</p>)
+                    }
+                    <button onClick={ () => console.log(order) }>see array (test)</button>
                 </Col>
             </Row>
         </Container>
