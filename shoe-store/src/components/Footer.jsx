@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 
 const Footer = () => {
     return(
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" fixed="bottom">
             <Container>
                 <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
                 <Navbar.Toggle />

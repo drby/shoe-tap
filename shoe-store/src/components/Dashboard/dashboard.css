@@ -1,0 +1,9 @@
+.order-card-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+.order-card{
+    margin: 1vh;
+}
