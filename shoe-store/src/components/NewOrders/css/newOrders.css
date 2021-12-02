@@ -1,0 +1,10 @@
+.order-card-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    border: solid red;
+    padding: 1vh;
+    margin: 1vh;
+    border-radius: 6vh;
+    min-height: 100vh;
+}

@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 //components
 import NewOrderCard from './NewOrderCard'
 
+//CSS
+import './css/newOrders.css'
+
 const NewOrders = () => {
     const [newOrders, setNewOrders] = useState([]);
     

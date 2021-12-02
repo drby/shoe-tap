@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 //components
 import NewOrders from '../NewOrders/NewOrders';
+import Inventory from '../Inventory/Inventory';
 
 //CSS
 import './dashboard.css'
@@ -16,9 +17,10 @@ const Dashboard = () => {
         <Container fluid="xxl">
             <Row>
                 <Col>
-                    <div className="order-card-container">
-                        <NewOrders />
-                    </div>          
+                    <NewOrders />         
+                </Col>
+                <Col>
+                    <Inventory />        
                 </Col>
             </Row>
         </Container>

@@ -1,0 +1,9 @@
+.inventory-card-container {
+    display: flex;
+    justify-content: flex-start;
+    border: solid red;
+    padding: 1vh;
+    margin: 1vh;
+    border-radius: 6vh;
+    min-height: 100vh;
+}
