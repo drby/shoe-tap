@@ -7,19 +7,20 @@ import NewOrderCard from './NewOrderCard'
 import './css/newOrders.css'
 
 const NewOrders = () => {
+
     const [newOrders, setNewOrders] = useState([]);
     
     const getNewOrder = () => {
         var ws = new WebSocket('ws://localhost:8080/');
         ws.onmessage = function(event) {
-        console.log(event.data);
-        setNewOrders( newOrders => [...newOrders, JSON.parse(event.data)])
+        //console.log(event.data);
+        setNewOrders( newOrders => [...newOrders, JSON.parse(event.data)]);
         };
     }
 
     useEffect(() => {
         getNewOrder()
-    },[])
+    },[]);
 
     return(
         <div className="order-card-container">
