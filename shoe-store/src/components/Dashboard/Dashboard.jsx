@@ -14,7 +14,7 @@ import Row from 'react-bootstrap/Row'
 const Dashboard = () => {
 
     return(
-        <Container fluid="xxl">
+        <Container fluid="false">
             <Row>
                 <Col>
                     <NewOrders />         
