@@ -1,4 +1,9 @@
 import React from 'react';
+
+//assets
+import Logo from '../../assets/images/logos/logo6.png'
+
+//Bootstrap
 import {Navbar, Nav} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 
@@ -7,12 +12,12 @@ import './header.css'
 
 const Header = () => {
   return(
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="light" variant="light" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
           <img
-            alt=""
-            src="/logo.svg"
+            alt="logo"
+            src={Logo}
             width="30"
             height="30"
             className="d-inline-block align-top"
