@@ -2,9 +2,9 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
-    border: solid red;
     padding: 1vh;
     margin: 1vh;
-    border-radius: 6vh;
+    border-radius: .65rem;
     min-height: 100vh;
+    background-color: #f8f9fa;
 }
