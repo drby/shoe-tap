@@ -19,7 +19,7 @@ const Dashboard = () => {
                 <Col>
                     <NewOrders />         
                 </Col>
-                <Col>
+                <Col id='inventory-container'>
                     <Inventory />        
                 </Col>
             </Row>
