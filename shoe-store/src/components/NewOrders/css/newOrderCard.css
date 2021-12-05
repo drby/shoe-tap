@@ -2,3 +2,15 @@
     margin: 1vh auto;
     width: 95% !important;
 }
+
+#store-icon {
+    vertical-align: middle;
+}
+
+#box-icon {
+    color: rgb(142, 18, 158);
+}
+
+.new-order-text {
+    font-weight: 350;
+}
