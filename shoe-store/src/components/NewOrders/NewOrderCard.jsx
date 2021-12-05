@@ -1,5 +1,8 @@
 import React from "react";
 
+//icons
+import { BsBoxSeam } from 'react-icons/bs';
+
 //css
 import './css/newOrderCard.css'
 
@@ -9,9 +12,8 @@ import Card from 'react-bootstrap/Card'
 const NewOrderCard = ({newOrder}) => {
     return(
         <Card className="order-card" style={{ width: '18rem' }}>
-            <Card.Header>{newOrder.store}</Card.Header>
             <Card.Body>
-                <Card.Text>Model: {newOrder.model}</Card.Text>
+                <Card.Text><BsBoxSeam /> Model: {newOrder.model} store: {newOrder.store}</Card.Text>
             </Card.Body>
         </Card>
     )
