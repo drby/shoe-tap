@@ -13,7 +13,7 @@ const NewOrderCard = ({newOrder}) => {
     return(
         <Card className="order-card" style={{ width: '18rem' }}>
             <Card.Body>
-                <Card.Text><BsBoxSeam /> Model: {newOrder.model} store: {newOrder.store}</Card.Text>
+                <Card.Text className='new-order-text'><BsBoxSeam /> - model: {newOrder.model} store: {newOrder.store}</Card.Text>
             </Card.Body>
         </Card>
     )
