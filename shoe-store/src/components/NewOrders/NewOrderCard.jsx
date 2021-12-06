@@ -14,7 +14,7 @@ const NewOrderCard = ({newOrder}) => {
     return(
         <Card className="order-card" style={{ width: '18rem' }}>
             <Card.Body>
-                <Card.Text className='new-order-text'><div><BsBoxSeam id='box-icon' /> - {newOrder.store} </div><div><GiConverseShoe /> {newOrder.model}</div><div>time</div></Card.Text>
+                <Card.Text className='new-order-text' as="div"><div><BsBoxSeam id='box-icon' /> - {newOrder.store} </div><div>{newOrder.model} - <GiConverseShoe /></div></Card.Text>
             </Card.Body>
         </Card>
     )

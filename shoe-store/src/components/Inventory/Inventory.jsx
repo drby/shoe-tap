@@ -5,11 +5,12 @@ import InventoryCard from './InventoryCard'
 
 //css
 import './css/inventory.css'
+import { GiConsoleController } from 'react-icons/gi';
 
-const Inventory = () => {
+const Inventory = ({newOrders}) => {
     // https://stackoverflow.com/questions/48568571/increment-value-of-one-element-of-an-json-array-of-objects
 
-    const [newOrders, setNewOrders] = useState([]);
+    const [stores, setStores] = useState([]);
 
     const testObj = [
         {
@@ -38,24 +39,32 @@ const Inventory = () => {
         }
     ]
     
-
-    const getNewOrder = () => {
+/*     const getNewOrder = () => {
         var ws = new WebSocket('ws://localhost:8080/');
         ws.onmessage = function(event) {
-        //console.log(event.data);
-        setNewOrders( newOrders => [...newOrders, JSON.parse(event.data)]);
-        };
-    }
+            let temp = stock.find(e => e.store === event.data.store)
+            if (!temp) { 
+                setStock( stock => [...stock.inventory, JSON.parse(event.data.inventory)]);
+            } else {
+                setStock( stock => [...stock, JSON.parse(event.data)]);
+            }
+            console.log(stock)
+        }
+    } */
 
     useEffect(() => {
-        getNewOrder()
-    },[]);
+        console.log(newOrders);
+        //let storeNames = [];
+        newOrders.map(order =>  setStores( stores => [...stores, order.store]))
+        //setStores( stores => [...stores, storeNames])
+        //console.log(stores);
+    },[newOrders]);
 
     return(
         <div className="inventory-card-container">
            {
-                testObj.map(obj => 
-                    <InventoryCard inventory={obj}/>
+                stores.map(store => 
+                    <InventoryCard inventory={store}/>
                 )
             }
         </div>
