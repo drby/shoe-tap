@@ -12,7 +12,7 @@ const Footer = () => {
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
-                        Signed in as: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Mark Otto</a>
+                        Made by: <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">Tom</a>
                     </Navbar.Text>
                 </Navbar.Collapse>
             </Container>

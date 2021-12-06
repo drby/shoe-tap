@@ -1,8 +1,8 @@
 import React from "react";
 
 //icons
-import { BsBoxSeam, BsShopWindow } from 'react-icons/bs';
-import { MdOutlineStore } from 'react-icons/md';
+import { BsBoxSeam } from 'react-icons/bs';
+import { GiConverseShoe } from 'react-icons/gi';
 
 //css
 import './css/newOrderCard.css'
@@ -14,7 +14,7 @@ const NewOrderCard = ({newOrder}) => {
     return(
         <Card className="order-card" style={{ width: '18rem' }}>
             <Card.Body>
-                <Card.Text className='new-order-text'><BsBoxSeam id='box-icon' /> - model: {newOrder.model} - <BsShopWindow id='store-icon'/> - {newOrder.store}</Card.Text>
+                <Card.Text className='new-order-text'><div><BsBoxSeam id='box-icon' /> - {newOrder.store} </div><div><GiConverseShoe /> {newOrder.model}</div><div>time</div></Card.Text>
             </Card.Body>
         </Card>
     )

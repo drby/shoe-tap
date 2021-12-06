@@ -13,4 +13,7 @@
 
 .new-order-text {
     font-weight: 350;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vh
 }
