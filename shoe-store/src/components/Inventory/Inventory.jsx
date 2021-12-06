@@ -51,10 +51,6 @@ const Inventory = () => {
         getNewOrder()
     },[]);
 
-    useEffect(() => {
-        getNewOrder()
-    },[]);
-
     return(
         <div className="inventory-card-container">
            {
