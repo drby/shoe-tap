@@ -1,7 +1,6 @@
 import React from "react";
 
 //icons
-import { GiHandTruck } from 'react-icons/gi';
 import { FaStoreAlt } from 'react-icons/fa';
 
 //css

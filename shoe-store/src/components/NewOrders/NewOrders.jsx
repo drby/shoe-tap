@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 //components
 import NewOrderCard from './NewOrderCard'
@@ -11,8 +11,8 @@ const NewOrders = ({newOrders}) => {
     return(
         <div className="order-card-container">
             {
-                newOrders.map(newOrder => 
-                    <NewOrderCard newOrder={newOrder}/>
+                newOrders.map((newOrder, index) => 
+                    <NewOrderCard key={index} newOrder={newOrder}/>
                 )
             }
         </div>
