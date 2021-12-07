@@ -10,8 +10,10 @@
 
 .model-container{
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+    align-content: flex-start;
     flex-direction: row;
 }
 

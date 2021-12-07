@@ -1,11 +1,11 @@
 .inventory-card-container {
     display: flex;
-    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: stretch;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     padding: 1vh;
     margin: 2vh;
     border-radius: .65rem;
-    overflow: auto;
     background-color: #f8f9fa;
 }
