@@ -26,13 +26,16 @@ const Inventory = ({newOrders}) => {
     },[newOrders]);
 
     return(
-        <div className="inventory-card-container">
-           {
-                Object.keys(obj).map((key, index) => 
-                    <InventoryCard key={index} inventory={key} models={obj[key]}/>
-                )
-            }
-        </div>
+        <>
+            <h2>Overall stock</h2>
+            <div className="inventory-card-container">
+                {
+                    Object.keys(obj).map((key, index) => 
+                        <InventoryCard key={index} inventory={key} models={obj[key]}/>
+                    )
+                }
+            </div>
+        </>
     )
 }
 

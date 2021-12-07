@@ -10,7 +10,7 @@ const NewOrders = ({newOrders}) => {
 
     return(
         <>
-            <h1>Incoming orders</h1>
+            <h2>Incoming orders</h2>
             <div className="order-card-container">
                 {
                     newOrders.map((newOrder, index) => 
