@@ -3,6 +3,10 @@
     width: 95% !important;
 }
 
+.order-card:hover{
+    background-color: #f8f9faaf;
+}
+
 #store-icon {
     vertical-align: middle;
 }
