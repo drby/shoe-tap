@@ -1,3 +1,22 @@
 .inventory-card{
     margin: 1vh auto;
+    font-size: 0.8rem;
+    min-height: 0;
+}
+
+.model-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.model-card{
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    margin: 0.6vh;
+    padding: 0.8vh;
+    border-radius: .2rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    width: max-content;
 }

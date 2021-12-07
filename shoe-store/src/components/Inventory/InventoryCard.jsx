@@ -9,12 +9,15 @@ import './css/inventoryCard.css'
 //Bootstrap
 import Card from 'react-bootstrap/Card'
 
-const Inventorycard = ({inventory}) => {
+const Inventorycard = ({inventory, models}) => {
     return(
         <Card className="inventory-card" style={{ width: '18rem' }}>
             <Card.Header>< FaStoreAlt/> - {inventory}</Card.Header>
-            <Card.Body>
-                <Card.Text>Model: </Card.Text>
+            <Card.Body as='div' className='model-container'>
+            {
+                models.map((model, index) => <Card.Text as='div' className='model-card' key={index}>{model.model}: {model.inventory}</Card.Text>)
+            }
+                
             </Card.Body>
         </Card>
     )

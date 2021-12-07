@@ -29,7 +29,7 @@ const Inventory = ({newOrders}) => {
         <div className="inventory-card-container">
            {
                 Object.keys(obj).map((key, index) => 
-                    <InventoryCard key={index} inventory={key}/>
+                    <InventoryCard key={index} inventory={key} models={obj[key]}/>
                 )
             }
         </div>

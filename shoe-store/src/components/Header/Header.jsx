@@ -22,7 +22,7 @@ const Header = () => {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Dashboard
+          Aldo
         </Navbar.Brand>
       </Container>
     </Navbar>

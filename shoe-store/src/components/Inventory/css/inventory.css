@@ -1,6 +1,6 @@
 .inventory-card-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     padding: 1vh;
     margin: 2vh;
