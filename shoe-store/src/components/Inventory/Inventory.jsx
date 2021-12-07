@@ -8,7 +8,6 @@ import './css/inventory.css'
 //import { GiConsoleController } from 'react-icons/gi';
 
 const Inventory = ({newOrders}) => {
-    // https://stackoverflow.com/questions/48568571/increment-value-of-one-element-of-an-json-array-of-objects
 
     const [stores, setStores] = useState([]);
     const [obj, setObj] = useState({});
@@ -29,8 +28,8 @@ const Inventory = ({newOrders}) => {
     return(
         <div className="inventory-card-container">
            {
-                stores.map((store, index) => 
-                    <InventoryCard key={index} inventory={store}/>
+                Object.keys(obj).map((key, index) => 
+                    <InventoryCard key={index} inventory={key}/>
                 )
             }
         </div>
