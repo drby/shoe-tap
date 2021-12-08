@@ -5,7 +5,6 @@ import InventoryCard from './InventoryCard'
 
 //css
 import './css/inventory.css'
-//import { GiConsoleController } from 'react-icons/gi';
 
 const Inventory = ({newOrders}) => {
 

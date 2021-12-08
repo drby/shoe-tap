@@ -16,9 +16,9 @@ const Dashboard = () => {
     const [newOrders, setNewOrders] = useState([]);
 
     const getNewOrder = () => {
-        var ws = new WebSocket('ws://localhost:8080/');
+        let ws = new WebSocket('ws://localhost:8080/');
         ws.onmessage = function(event) {
-        setNewOrders( newOrders => [...newOrders, JSON.parse(event.data)]);
+            setNewOrders( newOrders => [...newOrders, JSON.parse(event.data)]);
         };
     }
 
